@@ -4,7 +4,10 @@ class Student {
     active: boolean;
     major: string;
 
-    constructor(name: string, sat: number, major: string = "General Studies", active: boolean = true) {
+    constructor(name: string, 
+                sat: number, 
+                major: string = "General Studies", 
+                active: boolean = true) {
         this.name = name;
         this.sat = sat;
         this.major = major;
@@ -21,7 +24,7 @@ class Student {
     }
 }
 
-let students = [
+let students: Student[] = [
     new Student("Alice", 1200, "Math"),
     new Student("Bill", 900, "General Studies", false),
     new Student("Catherine", 1350, "Engineering"),
